@@ -1,0 +1,15 @@
+name: HitParticle
+main: lenlenlL6\hitparticle\Main
+author: lenlenlL6
+api: 4.0.0
+version: 0.0.1
+
+commands:
+ hitparticle:
+  description: Turn hit particles on or off
+  permission: hitparticle.command
+  
+permissions:
+ hitparticle.command:
+  description: Permission to use hit particle command
+  default: op
