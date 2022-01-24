@@ -1,0 +1,13 @@
+---
+#Config Enable Particles
+#True is on, false is off
+#More particle in next version
+
+HeartParticle: true
+InkParticle: false
+LavaParticle: false
+FlameParticle: false
+SmokeParticle: false
+WaterParticle: false
+active: true
+...
