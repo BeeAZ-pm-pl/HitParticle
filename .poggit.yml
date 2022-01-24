@@ -5,4 +5,5 @@ branches:
 projects:
   HitParticle:
     path: ""
+    icon: "icon.png"
 ...
