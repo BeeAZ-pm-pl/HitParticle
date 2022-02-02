@@ -23,25 +23,12 @@ class Main extends PluginBase implements Listener {
   public $prefix = "§a[ §bHitParticle §a]";
   
   public function onEnable() : void{
-    $this->getLogger()->info("
-    _   _ _ _   ____            _   _      _      
- | | | (_) |_|  _ \ __ _ _ __| |_(_) ___| | ___ 
- | |_| | | __| |_) / _` | '__| __| |/ __| |/ _ \
- |  _  | | |_|  __/ (_| | |  | |_| | (__| |  __/
- |_| |_|_|\__|_|   \__,_|_|   \__|_|\___|_|\___|
- Plugin Enable");
  $this->saveDefaultConfig();
  $this->getServer()->getPluginManager()->registerEvents($this, $this);
   }
   
   public function onDisable() : void{
-    $this->getLogger()->info("
-    _   _ _ _   ____            _   _      _      
- | | | (_) |_|  _ \ __ _ _ __| |_(_) ___| | ___ 
- | |_| | | __| |_) / _` | '__| __| |/ __| |/ _ \
- |  _  | | |_|  __/ (_| | |  | |_| | (__| |  __/
- |_| |_|_|\__|_|   \__,_|_|   \__|_|\___|_|\___|
- Plugin Disable");
+    $this->getConfig()->save();
   }
   
   public function onCommand(CommandSender $player, Command $cmd, String $label, array $args): bool{
