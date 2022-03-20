@@ -65,16 +65,16 @@ class Main extends PluginBase implements Listener {
        $world->addParticle($position, new InkParticle(1));
      }
      if($this->getConfig()->get("LavaParticle") === true){
-       $world->addParticle($position, new LavaParticle($position));
+       $world->addParticle($position, new LavaParticle(1));
      }
      if($this->getConfig()->get("FlameParticle") === true){
-       $world->addParticle($position, new FlameParticle($position));
+       $world->addParticle($position, new FlameParticle(1));
      }
      if($this->getConfig()->get("SmokeParticle") === true){
        $world->addParticle($position, new SmokeParticle(1));
      }
      if($this->getConfig()->get("WaterParticle") === true){
-       $world->addParticle($position, new WaterParticle($position));
+       $world->addParticle($position, new WaterParticle(1));
      }
       }
     }
