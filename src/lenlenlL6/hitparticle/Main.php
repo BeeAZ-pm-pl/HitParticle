@@ -59,10 +59,10 @@ class Main extends PluginBase implements Listener {
     if(!$event->isCancelled()){
       if($this->getConfig()->get("active") === true){
      if($this->getConfig()->get("HeartParticle") === true){
-       $world->addParticle($position, new HeartParticle(1, $position));
+       $world->addParticle($position, new HeartParticle(1));
      }
      if($this->getConfig()->get("InkParticle") === true){
-       $world->addParticle($position, new InkParticle(1, $position));
+       $world->addParticle($position, new InkParticle(1));
      }
      if($this->getConfig()->get("LavaParticle") === true){
        $world->addParticle($position, new LavaParticle($position));
@@ -71,7 +71,7 @@ class Main extends PluginBase implements Listener {
        $world->addParticle($position, new FlameParticle($position));
      }
      if($this->getConfig()->get("SmokeParticle") === true){
-       $world->addParticle($position, new SmokeParticle(1, $position));
+       $world->addParticle($position, new SmokeParticle(1));
      }
      if($this->getConfig()->get("WaterParticle") === true){
        $world->addParticle($position, new WaterParticle($position));
