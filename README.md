@@ -1,5 +1,5 @@
 <div align="center">
-<h1>HitParticle | v1.0.0<h1>
+<h1>HitParticle | v0.0.2<h1>
 </div>
 <p align="center">
 <a href="https://poggit.pmmp.io/p/HitParticle"><img src="https://poggit.pmmp.io/shield.state/HitParticle">
